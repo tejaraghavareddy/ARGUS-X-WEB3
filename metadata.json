@@ -1,0 +1,8 @@
+{
+  "name": "Remix Soulbound NFT Certificate dApp",
+  "description": "Mint non-transferable Soulbound NFT certificates to student wallets with IPFS metadata storage, whitelist verification, and instant on-chain authenticity verification.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
