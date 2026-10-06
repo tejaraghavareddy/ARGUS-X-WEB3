@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #f5f7fb;
+  color: #0b1f3a;
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.cert-grid {
+  background-image:
+    linear-gradient(rgba(11, 31, 58, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(11, 31, 58, 0.04) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.input {
+  width: 100%;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(11, 31, 58, 0.12);
+  background: #fff;
+  padding: 0.7rem 0.9rem;
+  color: #0b1f3a;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #1b365d;
+  box-shadow: 0 0 0 3px rgba(27, 54, 93, 0.12);
+}

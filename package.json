@@ -1,0 +1,27 @@
+{
+  "name": "soulcert",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SoulCert — on-chain verifiable credentials for education",
+  "scripts": {
+    "compile": "hardhat compile && hardhat run scripts/copy-abi.ts --network hardhat",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "deploy:local": "hardhat run scripts/deploy.ts --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploy.ts --network sepolia",
+    "copy-abi": "hardhat run scripts/copy-abi.ts",
+    "frontend:dev": "npm --prefix frontend run dev",
+    "frontend:build": "npm --prefix frontend run build"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@types/node": "^22.10.2",
+    "dotenv": "^16.4.7",
+    "hardhat": "^2.22.17",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.1.0"
+  }
+}
